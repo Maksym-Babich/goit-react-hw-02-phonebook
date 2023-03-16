@@ -4,6 +4,10 @@ import { nanoid } from 'nanoid';
 import { HtmlForm, Label, Input, Button } from 'components/Form/Form.styled';
 
 export class Form extends Component {
+  PropTypes = {
+    onAddContact: PropTypes.func.isRequired,
+  };
+
   nameId = nanoid();
   phoneId = nanoid();
 
