@@ -48,10 +48,9 @@ export class App extends Component {
       return;
     }
 
-    this.setState((state) => {
+    this.setState((prevState) => {
       return {
-        ...state,
-        contacts: [contact, ...state.contacts],
+        contacts: [contact, ...prevState.contacts],
       };
     });
     event.currentTarget.reset();
@@ -64,10 +63,9 @@ export class App extends Component {
   };
 
   onContactDelete = (evt) => {
-    this.setState((state) => {
+    this.setState((prevState) => {
       return {
-        ...state,
-        contacts: state.contacts.filter((contact) => {
+        contacts: prevState.contacts.filter((contact) => {
           return contact.id !== evt.target.dataset.id;
         }),
       };

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { ContactsList } from 'components/Contacts/Contacts.styled';
-import { Contact } from 'components/Contact/Contact';
+import { Contact } from 'components/Contacts/Contact/Contact';
 
 export class Contacts extends Component {
   PropTypes = {

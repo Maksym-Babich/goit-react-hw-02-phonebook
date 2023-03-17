@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { ContactItem, Delete } from 'components/Contact/Contact.styled';
+import { ContactItem, Delete } from 'components/Contacts/Contact/Contact.styled';
 
 export class Contact extends Component {
   PropTypes = {
